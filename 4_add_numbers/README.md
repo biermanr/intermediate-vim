@@ -37,8 +37,9 @@ Here are the steps
 ```
 C-v     select bullet points
 c1)     Replace with 1)
+<ESC>   Bask to normal mode
 gv      Reselect bloc visual
-move to the second entry
+oj      To move to the second entry
 gC-a    increment as a counter
 ```
 Try it below!

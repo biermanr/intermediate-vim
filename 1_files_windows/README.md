@@ -39,8 +39,7 @@ gf
 :find s*/*1.txt
 ```
 Find must resolve to a single file.  Since there is a `file1.txt` in the current
-directory and subdirectory, we have to specify the `s*/` part.  To get to
-`subdir/sub.txt`, using `:find sub.txt` is sufficient.
+directory and subdirectory, we have to specify the `s*/` part.
 
 After you open a file you can jump back with `C-o` and forward with `C-i`.
 To list all open buffers, you can use `:ls` but typically I tend to ignore
@@ -57,6 +56,8 @@ C-wo                close all other windows
 C-ww                toggle between windows
 C-wl                move to the window on the right
 C-wh                move to the window on the left
+C-wk                move to the window up
+C-wj                move to the window down
 ```
 Splits can be moved and resized as well.  Without any other arguments,
 the split contains the same active buffer, but you can also specify a filename
@@ -66,7 +67,9 @@ it.
 
 > __Exercise 1__:
 >
->    Make a vertical split of this buffer using :vs then try deleting word 
+>    Make a vertical split of this buffer using :vs 
+>    then move to that window using `C-wl`
+>    then try deleting WORD 
 >
 >    It should update in both windows! Then C-wo to close the vertical split
 
@@ -119,7 +122,7 @@ example `cat *.txt | vi -`.
 If you'd like, you can have vim write a file of all the commands you
 issued in your last session, by using `vi -w commands.txt file3.txt`.
 I haven't used this much, but it allows you to count your keystrokes
-if you're into that sort of thing. Go ahead and try it now!
+if you're into that sort of thing.
 
 Once you `:wq` out of vim, you can use `wc -c commands.txt` to count the
 number of characters in the file.  

@@ -34,7 +34,7 @@ n,;,,       move to a search or character match
 ```
 Shift with each of these produces a similar movement
 ```
-W,E,B       move by a WORD
+W,E,B       move by a WORD (this-is-a-WORD try w vs. W)
 T,F         move backward to a character
 N           move to a search backwards
 #           search for the word under the cursor backwards
@@ -57,8 +57,8 @@ Moves can also be much larger
 gg,G            move to start,end of file
 <#>g            move to line #
 C-f,C-u         move down,up by a screen
-C-e,C-y         move down,up one line
-C-o,C-i         jump backward,forward
+C-e,C-y         move screen down,up one line
+C-o,C-i         jump backward,forward with multiple files
 m<c>,`<c>       mark location as `c`, recall it
 %               move between matching (,[,{,",'
 z[z,-,enter]    move window so curser is in the middle, bottom, top
@@ -142,9 +142,14 @@ d3w         delete 3 words
 >
 > Delete the next 3 words VIM IS LAME to fix this line
 >
-> This line is lame too, you should probably delete it
+> This entire line is lame too, you should probably delete it
 >
 > But this line is great, in fact you should yank and paste it
+> 
+> Starting here [x], see if you can delete this line and the next 
+> two lines with the same command.
+> You can try modifying `dd` or `j`
+> DONT DELETE ME
 
 Instead of a motion, you can use a search command or text objects.  Text objects
 are represented by `i` or `a` and the surrounding object
@@ -163,7 +168,9 @@ command.
 >
 > Translate the quoted word to english "hola"
 >
-> This function should take arguments: def foo(bar, baz)
+> This function should NOT take arguments
+> def foo(bar, baz):
+>     print("Hello, this is foo")
 
 Some meta-commands are just handy enough they become muscle memory:
 ```
@@ -268,7 +275,7 @@ and operator commands introduced above.
 
 > __Exercise 11__: 
 > `my_var` is accidentally being overwritten on the third line below.
-> Position your cursor over `my_var` on the first line then use `#` 
+> Position your cursor over `my_var` on the first line then use `*` 
 > to search for the next occurrence of `my_var`.
 > Delete the line that overwrites `my_var` using `dd`.
 > 
@@ -293,7 +300,7 @@ and operator commands introduced above.
 > 
 > samtools view -f 3 -F 3584 -L chr1.bed -o filtered_reads.sam -U removed_reads.sam mouse_reads.bam
 > 
-> but it would be much nicer if it were broken up into multiple lines like this:
+> but it would be nicer to read if it were broken up into multiple lines like this:
 >
 > samtools view \
 >   -f 3 \
@@ -302,3 +309,11 @@ and operator commands introduced above.
 >   -o filtered_reads.sam \
 >   -U removed_reads.sam \
 >   mouse_reads.bam
+>
+> I would do this with a combination of "forward to space"
+> followed by typing the \, going to the next line with enter
+> then going back to normal mode, and using `;` to repeat the movement
+> twice, then `.` to repeat the next line, indenting etc.
+> might need to do a final indenting
+>
+> after the first line, this becomes `;;.;;.;;.`
