@@ -200,7 +200,22 @@ little you miss having a caps lock option!
 The dot command will replay the last operation you performed.  That may seem like
 a silly thing to do, but using the dot command effectively will drastically improve
 your efficiency.  Often times in development, you need to perform the same edit
-throughout a file or function.  There are 3 parts to effective dot usage:
+throughout a file or function.
+
+
+> __Exercise 8a__:
+> The following lines have incorrect historical quotes,
+> I'm not sure what the correct quotes are, but as a
+> first step lets just delete what's in the quotes
+> to avoid any future issues
+>
+> Abe Lincoln - "Don't trust everything you see on the internet"
+> Ruth Bader Ginsburg - "The executive and legaslative branches are the best"
+> Shia LaBeouf - "It's time to stop pursuing your dreams"
+
+
+
+There are 3 parts to effective dot usage:
 
 ### Make edits in a repeatable way
 
@@ -214,6 +229,17 @@ the number of words to delete.
 
 Get in the habit of making small changes, repeating as needed with dot, and undoing
 if you go too far.  It uses more key strokes but it uses much less mental load.
+
+> __Exercise 8b__:
+> Each of the Trademarked items indicated by * should have a (Tm) added to the end
+>
+> Oreos*
+> Earth
+> Gatorade*
+> Powerade*
+> Wind
+> Fire
+> Earth Wind and Fire*
 
 ### Rapid fire dot
 
@@ -233,13 +259,13 @@ craft operations faster the breakpoint for using a macro or regex will shift.
 My cutoff is around 10 repetitions; just be aware that there are always better
 ways, but they may be slower the first time you have to look it up!
 
-> __Exercise 8__:
+> __Exercise 9__:
 > 
 > Try removing the extraaaaaa using x a few times and then undoing it
 > 
 > Now try removing the extra using de and then undoing it
 
-> __Exercise 9__:
+> __Exercise 10__:
 >     DeleTe eveRy worD on This liNe that haS A capital leTter
 
 ### Adding common abbreviations to your .vimrc
@@ -265,7 +291,7 @@ abbreviate const public static final int
 Here are some additional exercises that you can use to practice the movement 
 and operator commands introduced above.
 
-> __Exercise 10__: 
+> __Exercise 11__: 
 >
 > python_dict = {
 >     'a': 1,
@@ -273,7 +299,7 @@ and operator commands introduced above.
 > } #delete this comment using % to move between brackets
 
 
-> __Exercise 11__: 
+> __Exercise 12__: 
 > `my_var` is accidentally being overwritten on the third line below.
 > Position your cursor over `my_var` on the first line then use `*` 
 > to search for the next occurrence of `my_var`.
@@ -283,10 +309,11 @@ and operator commands introduced above.
 >     other_var = 3
 >     my_var = 'oops I shouldnt be overwriting this'
 
-> __Exercise 12__:
+> __Exercise 13__:
 > This line and the next line are separated by an empty line
 > 
 > It's true, there's an empty line above.
+> 
 > It would be nice if all the other lines also had a separating line
 > that would make the lines easier to read
 > and it shouldn't be too hard to do by yanking the empty line
@@ -294,7 +321,7 @@ and operator commands introduced above.
 > and finally using the dot command `.` to repeat it as much
 > as is necessary to get it all done
 
-> __Exercise 13__: 
+> __Exercise 14__: 
 > Sometimes I'll have a shell command in a `.sh` file that is 
 > really long like this one:
 > 
