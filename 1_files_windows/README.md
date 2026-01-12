@@ -65,15 +65,15 @@ to `:sp` or `:vs` to open a new file in a split.  Opening the same buffer is
 handy for large files or when you need to look at an implementation while using
 it.
 
-> __Exercise 1__:
+> __Exercise: vertical-split__:
 >
->    Make a vertical split of this buffer using :vs 
+>    Make a vertical split of this buffer using :vs
 >    then move to that window using `C-wl`
->    then try deleting WORD 
+>    then try deleting WORD
 >
 >    It should update in both windows! Then C-wo to close the vertical split
 
-> __Exercise 2__:
+> __Exercise: horizontal-split-file__:
 >
 >    Make a horizontal split of file2.txt using :sp file2.txt
 
@@ -87,7 +87,7 @@ You can work with tabs with ex commands:
 gt,gT                cycle through tabs
 ```
 
-> __Exercise 3__:
+> __Exercise: tab-navigation__:
 >
 >  Make a new tab of file1.txt using `:tabe file1.txt`
 >

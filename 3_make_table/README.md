@@ -11,7 +11,7 @@ to how you would edit text in a word processor.  To enter visual mode, press
 selected. You can then use `d` to delete the selected text, `y` to yank it,
 or `c` to change it, just like in normal mode. 
 
-> __Exercise 1__:
+> __Exercise: visual-mode-basics__:
 >
 > Enter visual mode to highlight THIS word (vaw) then delete it
 >
@@ -24,14 +24,14 @@ or `c` to change it, just like in normal mode.
 Visual line mode is similar to visual mode, but selects whole lines at a time.
 That's pretty much it. You can enter visual line mode with `V` in normal mode.
 
-> __Exercise 2__:
+> __Exercise: visual-line-mode__:
 >
 > Enter visual line mode and select all 3 lines.
-> Yank the selected lines. Without moving your cursor, 
+> Yank the selected lines. Without moving your cursor,
 > paste them once, what happened? Undo and try P instead of p.
 
 
-> __Exercise 2.5__:
+> __Exercise: swap-case__:
 >
 > oH NO! tHE UPPER/LOWER CASE. iT IS COMPLETELY SWAPPED!
 >
@@ -45,7 +45,7 @@ You can enter visual block mode with `C-v` in normal mode.
 You can then move the cursor around to select text.
 You can even use `o` to take control of the opposite corner of the block.
 
-    Exercise 3:
+    Exercise: visual-block-columns:
 
     Enter visual block mode and highlight the entire grid below.
     Next try highlighting just the 2nd column.
