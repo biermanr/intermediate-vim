@@ -36,7 +36,7 @@ n,;,,       move to a search or character match
 ```
 Shift with each of these produces a similar movement
 ```
-W,E,B       move by a WORD (this-is-a-WORD try w vs. W)
+W,E,B       move by a WORD e.g this-is-a-WORD (try w vs. W)
 T,F         move backward to a character
 N           move to a search backwards
 #           search for the word under the cursor backwards
@@ -60,7 +60,7 @@ gg,G            move to start,end of file
 <#>g            move to line #
 C-f,C-u         move down,up by a screen
 C-e,C-y         move screen down,up one line
-C-o,C-i         jump backward,forward with multiple files
+C-o,C-i         jump backward,forward through cursor history
 m<c>,`<c>       mark location as `c`, recall it
 %               move between matching (,[,{,",'
 z[z,-,enter]    move window so curser is in the middle, bottom, top
@@ -287,8 +287,6 @@ abbreviate PUaddr Princeton University. Princeton, NJ 08544
 " common misspelling
 abbreviate teh the
 ```
-
-Princeton University. Princeton, NJ 08544
 
 ### Extra moving and editing exercises
 
